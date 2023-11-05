@@ -5,7 +5,7 @@
 2. *Install Apache2, PHP, and nmap*: Use the command `sudo apt-get install apache2`, `sudo apt-get install php`, and `sudo apt-get install nmap`.
 3. *Configure Ownership and Permissions*: Use the command `sudo chown ubuntu /var/www/html` and `sudo chmod 777 /var/www/html`.
 4. *Cron Job Configuration*: Use the command `sudo crontab -e` and add the line `/10 * * * * nmap 192.168.1.0/24 -oN /var/www/html/nmap.html` to the crontab file.
-5. *Create a PHP file (network.php)*: The code is presented in `intel.php`
+5. *Create a PHP file (network.php)*: The code is presented in `network.php`
 
 ### Steps to follow:
 1. *To Check for Live Hosts*- `sudo nmap -sn 192.168.52.0/24 -oN live_hosts.txt`
